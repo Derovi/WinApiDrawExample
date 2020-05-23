@@ -115,6 +115,8 @@ class MultipleLinesPainter {
                     if (!objects.empty()) {
                         objects.back()->finish();
                     }
+                } else if (w_param == 'C' && GetKeyState(VK_CONTROL) < 0) {
+                    objects.clear();
                 }
                 InvalidateRect(window_handle, nullptr, true);
                 break;
