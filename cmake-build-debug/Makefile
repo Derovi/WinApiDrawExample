@@ -203,6 +203,33 @@ objectmanager.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objectmanager.cpp.s
 .PHONY : objectmanager.cpp.s
 
+objects/rectangleobject.obj: objects/rectangleobject.cpp.obj
+
+.PHONY : objects/rectangleobject.obj
+
+# target to build an object file
+objects/rectangleobject.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj
+.PHONY : objects/rectangleobject.cpp.obj
+
+objects/rectangleobject.i: objects/rectangleobject.cpp.i
+
+.PHONY : objects/rectangleobject.i
+
+# target to preprocess a source file
+objects/rectangleobject.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.i
+.PHONY : objects/rectangleobject.cpp.i
+
+objects/rectangleobject.s: objects/rectangleobject.cpp.s
+
+.PHONY : objects/rectangleobject.s
+
+# target to generate assembly for a file
+objects/rectangleobject.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.s
+.PHONY : objects/rectangleobject.cpp.s
+
 objects/segmentobject.obj: objects/segmentobject.cpp.obj
 
 .PHONY : objects/segmentobject.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... objectmanager.obj
 	@echo ... objectmanager.i
 	@echo ... objectmanager.s
+	@echo ... objects/rectangleobject.obj
+	@echo ... objects/rectangleobject.i
+	@echo ... objects/rectangleobject.s
 	@echo ... objects/segmentobject.obj
 	@echo ... objects/segmentobject.i
 	@echo ... objects/segmentobject.s

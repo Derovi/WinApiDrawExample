@@ -10,6 +10,7 @@
 #include "graphisobject.h"
 #include "objectmanager.h"
 #include "objects/segmentobject.h"
+#include "objects/rectangleobject.h"
 
 LRESULT MessagesHandler(
         HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param);
@@ -67,6 +68,9 @@ class MultipleLinesPainter {
     MultipleLinesPainter() {
         manager.registerObject("Segment", [] {
             return static_cast<GraphicObject*>(new SegmentObject());
+        });
+        manager.registerObject("Rectangle", [] {
+            return static_cast<GraphicObject*>(new RectangleObject());
         });
     }
 

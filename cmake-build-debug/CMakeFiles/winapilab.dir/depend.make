@@ -7,11 +7,16 @@ CMakeFiles/winapilab.dir/graphisobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objectmanager.h
+CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/rectangleobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/segmentobject.h
 
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../objectmanager.cpp
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../objectmanager.h
+
+CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../graphisobject.h
+CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../objects/rectangleobject.cpp
+CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../objects/rectangleobject.h
 
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../objects/segmentobject.cpp
