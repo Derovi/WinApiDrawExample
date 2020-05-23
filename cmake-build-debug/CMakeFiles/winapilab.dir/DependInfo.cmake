@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/codef/winapilab/objects/circleobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj"
   "D:/codef/winapilab/objects/ellipseobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj"
   "D:/codef/winapilab/objects/pentagonobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj"
+  "D:/codef/winapilab/objects/pieobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj"
   "D:/codef/winapilab/objects/rectangleobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj"
   "D:/codef/winapilab/objects/segmentobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj"
   )

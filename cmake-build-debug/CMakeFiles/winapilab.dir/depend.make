@@ -11,6 +11,7 @@ CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/brokenlineobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/circleobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/ellipseobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/pentagonobject.h
+CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/pieobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/rectangleobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/segmentobject.h
 
@@ -33,6 +34,10 @@ CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj: ../objects/ellipseobject
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../objects/pentagonobject.cpp
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../objects/pentagonobject.h
+
+CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../graphisobject.h
+CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../objects/pieobject.cpp
+CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../objects/pieobject.h
 
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../objects/rectangleobject.cpp

@@ -119,6 +119,12 @@
 		<Unit filename="D:/codef/winapilab/objects/pentagonobject.h">
 			<Option target="winapilab"/>
 		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/pieobject.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/pieobject.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/objects/rectangleobject.cpp">
 			<Option target="winapilab"/>
 		</Unit>

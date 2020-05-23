@@ -311,6 +311,33 @@ objects/pentagonobject.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.s
 .PHONY : objects/pentagonobject.cpp.s
 
+objects/pieobject.obj: objects/pieobject.cpp.obj
+
+.PHONY : objects/pieobject.obj
+
+# target to build an object file
+objects/pieobject.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj
+.PHONY : objects/pieobject.cpp.obj
+
+objects/pieobject.i: objects/pieobject.cpp.i
+
+.PHONY : objects/pieobject.i
+
+# target to preprocess a source file
+objects/pieobject.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pieobject.cpp.i
+.PHONY : objects/pieobject.cpp.i
+
+objects/pieobject.s: objects/pieobject.cpp.s
+
+.PHONY : objects/pieobject.s
+
+# target to generate assembly for a file
+objects/pieobject.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pieobject.cpp.s
+.PHONY : objects/pieobject.cpp.s
+
 objects/rectangleobject.obj: objects/rectangleobject.cpp.obj
 
 .PHONY : objects/rectangleobject.obj
@@ -395,6 +422,9 @@ help:
 	@echo ... objects/pentagonobject.obj
 	@echo ... objects/pentagonobject.i
 	@echo ... objects/pentagonobject.s
+	@echo ... objects/pieobject.obj
+	@echo ... objects/pieobject.i
+	@echo ... objects/pieobject.s
 	@echo ... objects/rectangleobject.obj
 	@echo ... objects/rectangleobject.i
 	@echo ... objects/rectangleobject.s
