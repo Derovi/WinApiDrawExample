@@ -6,23 +6,33 @@
 
 #IncludeRegexTransform: 
 
-D:/codef/winapilab/animation.cpp
-animation.h
-D:/codef/winapilab/animation.h
+D:/codef/winapilab/action.h
+graphisobject.h
+D:/codef/winapilab/graphisobject.h
 windows.h
 -
 windowsx.h
 -
 winbase.h
 -
-iostream
--
 
 D:/codef/winapilab/animation.h
 cstdint
 -
+iostream
+-
+algorithm
+-
+string
+-
+random
+-
+chrono
+-
 graphisobject.h
 D:/codef/winapilab/graphisobject.h
+action.h
+D:/codef/winapilab/action.h
 
 D:/codef/winapilab/graphisobject.h
 vector

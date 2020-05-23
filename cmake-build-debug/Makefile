@@ -122,6 +122,33 @@ winapilab/fast:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/build
 .PHONY : winapilab/fast
 
+actions/moveaction.obj: actions/moveaction.cpp.obj
+
+.PHONY : actions/moveaction.obj
+
+# target to build an object file
+actions/moveaction.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj
+.PHONY : actions/moveaction.cpp.obj
+
+actions/moveaction.i: actions/moveaction.cpp.i
+
+.PHONY : actions/moveaction.i
+
+# target to preprocess a source file
+actions/moveaction.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/moveaction.cpp.i
+.PHONY : actions/moveaction.cpp.i
+
+actions/moveaction.s: actions/moveaction.cpp.s
+
+.PHONY : actions/moveaction.s
+
+# target to generate assembly for a file
+actions/moveaction.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/moveaction.cpp.s
+.PHONY : actions/moveaction.cpp.s
+
 animation.obj: animation.cpp.obj
 
 .PHONY : animation.obj
@@ -428,6 +455,9 @@ help:
 	@echo ... winapilab
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... actions/moveaction.obj
+	@echo ... actions/moveaction.i
+	@echo ... actions/moveaction.s
 	@echo ... animation.obj
 	@echo ... animation.i
 	@echo ... animation.s

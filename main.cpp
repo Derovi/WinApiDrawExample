@@ -106,6 +106,14 @@ class MultipleLinesPainter {
     LRESULT Handle(
             HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param) {
         switch (message_code) {
+            case WM_CREATE: {
+                SetTimer(window_handle, TIMER_ID, 20 /* millis */, NULL);
+                break;
+            }
+            case WM_TIMER: {
+                InvalidateRect(window_handle, nullptr, true);
+                break;
+            }
             case WM_LBUTTONDOWN: {
                 POINT clickedPoint = {LOWORD(l_param), HIWORD(l_param)};
                 if (objects.empty() || objects.back()->isReady()) {
@@ -148,11 +156,11 @@ class MultipleLinesPainter {
                 break;
             }
             case WM_PAINT: {
-                animation->tick();
-
                 PAINTSTRUCT ps;
 
                 HDC hdc = BeginPaint(window_handle, &ps);
+
+                animation->tick(window_handle, hdc);
 
                 SelectObject(hdc, GetStockObject(HOLLOW_BRUSH));
 
@@ -183,22 +191,30 @@ class MultipleLinesPainter {
                 // draw help
 
                 text = L"Use left and right arrows to change drawing object";
-                TextOutW(hdc, 100, height - 200, text.c_str(),
+                TextOutW(hdc, 100, height - 280, text.c_str(),
                          lstrlenW(text.c_str()));
 
                 text = L"Use left mouse button to add a point to the drawing object";
-                TextOutW(hdc, 100, height - 160, text.c_str(),
+                TextOutW(hdc, 100, height - 240, text.c_str(),
                          lstrlenW(text.c_str()));
 
                 text = L"Use right mouse button to undo object drawing";
-                TextOutW(hdc, 100, height - 120, text.c_str(),
+                TextOutW(hdc, 100, height - 200, text.c_str(),
                          lstrlenW(text.c_str()));
 
                 text = L"Use ENTER to finish object drawing";
-                TextOutW(hdc, 100, height - 80, text.c_str(),
+                TextOutW(hdc, 100, height - 160, text.c_str(),
                          lstrlenW(text.c_str()));
 
                 text = L"Use ctrl + C to clear all objects from the screen";
+                TextOutW(hdc, 100, height - 120, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use SPACE to start/ stop animation";
+                TextOutW(hdc, 100, height - 80, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use R to restart animation";
                 TextOutW(hdc, 100, height - 40, text.c_str(),
                          lstrlenW(text.c_str()));
 
@@ -207,15 +223,6 @@ class MultipleLinesPainter {
                 break;
             }
             case WM_SIZE: {
-                InvalidateRect(window_handle, nullptr, true);
-                break;
-            }
-            case WM_MOUSEMOVE: {
-                int64_t currentTime = GetCurrentTime();
-                if (currentTime - lastTime < 30) {
-                    break;
-                }
-                lastTime = currentTime;
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
@@ -235,6 +242,8 @@ class MultipleLinesPainter {
     ObjectManager manager;
     int64_t lastTime;
     Animation* animation;
+
+    int TIMER_ID;
 };
 
 LRESULT MessagesHandler(
