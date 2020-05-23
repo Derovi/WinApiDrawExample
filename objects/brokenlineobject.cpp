@@ -23,7 +23,7 @@ void BrokenLineObject::draw(HWND& hwnd, HDC hdc) {
         }
         if (index > 0) {
             MoveToEx(hdc, getPoints()[index - 1].x, getPoints()[index - 1].y, nullptr);
-            LineTo(hdc, getPoints().front().x, getPoints().front().y);
+            LineTo(hdc, getPoints()[index].x, getPoints()[index].y);
         }
     }
     if (!isReady()) {
