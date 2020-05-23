@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/codef/winapilab/graphisobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/graphisobject.cpp.obj"
   "D:/codef/winapilab/main.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/main.cpp.obj"
   "D:/codef/winapilab/objectmanager.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objectmanager.cpp.obj"
+  "D:/codef/winapilab/objects/brokenlineobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj"
   "D:/codef/winapilab/objects/rectangleobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj"
   "D:/codef/winapilab/objects/segmentobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj"
   )

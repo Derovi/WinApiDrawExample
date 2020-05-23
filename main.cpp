@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <windowsx.h>
+#include <winbase.h>
 
 #include <cmath>
 #include <string>
@@ -11,6 +12,7 @@
 #include "objectmanager.h"
 #include "objects/segmentobject.h"
 #include "objects/rectangleobject.h"
+#include "objects/brokenlineobject.h"
 
 LRESULT MessagesHandler(
         HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param);
@@ -66,11 +68,14 @@ INT WinMain(HINSTANCE instance_handle_arg, HINSTANCE,
 class MultipleLinesPainter {
   public:
     MultipleLinesPainter() {
-        manager.registerObject("Segment", [] {
+        manager.registerObject(L"Segment", [] {
             return static_cast<GraphicObject*>(new SegmentObject());
         });
-        manager.registerObject("Rectangle", [] {
+        manager.registerObject(L"Rectangle", [] {
             return static_cast<GraphicObject*>(new RectangleObject());
+        });
+        manager.registerObject(L"Broken line", [] {
+            return static_cast<GraphicObject*>(new BrokenLineObject());
         });
     }
 
@@ -104,7 +109,7 @@ class MultipleLinesPainter {
             case WM_KEYDOWN: {
                 if (w_param == VK_LEFT) {
                     manager.prev();
-                } else if (w_param == VK_RIGHT){
+                } else if (w_param == VK_RIGHT) {
                     manager.next();
                 } else if (w_param == VK_RETURN) {
                     if (!objects.empty()) {
@@ -116,10 +121,36 @@ class MultipleLinesPainter {
             }
             case WM_PAINT: {
                 PAINTSTRUCT ps;
+
                 HDC hdc = BeginPaint(window_handle, &ps);
+
+                SelectObject(hdc, GetStockObject(HOLLOW_BRUSH));
+
                 for (auto object : objects) {
                     object->draw(window_handle, hdc);
                 }
+
+                // draw text
+
+                DWORD color = GetSysColor(COLOR_BTNFACE);
+                SetBkColor(hdc, color);
+
+                HFONT hFont = CreateFontW(15, 0, 0, 0, FW_MEDIUM, 0, 0, 0, 0,
+                                          0, 0, 1, 0, L"Georgia");
+                auto holdFont = static_cast<HFONT>(SelectObject(hdc, hFont));
+
+                // draw status
+                RECT rect;
+                GetWindowRect(window_handle, &rect);
+
+                int width = rect.right - rect.left;
+                int height = rect.bottom - rect.top;
+
+                std::wstring text = L"Selected object: " + manager.getName();
+                TextOutW(hdc, width / 2 - 3 * lstrlenW(text.c_str()), height - 100, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                DeleteObject(hFont);
                 EndPaint(window_handle, &ps);
                 break;
             }
@@ -128,6 +159,11 @@ class MultipleLinesPainter {
                 break;
             }
             case WM_MOUSEMOVE: {
+                int64_t currentTime = GetCurrentTime();
+                if (currentTime - lastTime < 30) {
+                    break;
+                }
+                lastTime = currentTime;
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
@@ -145,6 +181,7 @@ class MultipleLinesPainter {
   private:
     std::vector<GraphicObject*> objects;
     ObjectManager manager;
+    int64_t lastTime;
 };
 
 LRESULT MessagesHandler(

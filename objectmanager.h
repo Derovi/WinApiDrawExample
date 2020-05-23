@@ -9,14 +9,11 @@ class ObjectManager {
   public:
     ObjectManager();
 
-    void registerObject(const std::string& name, const std::function<GraphicObject*()>& creator) {
-        names.push_back(name);
-        creators.push_back(creator);
-    }
+    void registerObject(const std::wstring& name, const std::function<GraphicObject*()>& creator);
 
     GraphicObject* create();
 
-    std::string getName();
+    std::wstring getName();
 
     void next();
 
@@ -28,11 +25,11 @@ class ObjectManager {
 
     [[nodiscard]] const std::vector<std::function<GraphicObject*()>>& getCreators() const;
 
-    [[nodiscard]] const std::vector<std::string>& getNames() const;
+    [[nodiscard]] const std::vector<std::wstring>& getNames() const;
 
   private:
     std::vector<std::function<GraphicObject*()>> creators;
-    std::vector<std::string> names;
+    std::vector<std::wstring> names;
 
     int currentId;
 };

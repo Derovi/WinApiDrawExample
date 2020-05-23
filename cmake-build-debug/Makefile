@@ -203,6 +203,33 @@ objectmanager.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objectmanager.cpp.s
 .PHONY : objectmanager.cpp.s
 
+objects/brokenlineobject.obj: objects/brokenlineobject.cpp.obj
+
+.PHONY : objects/brokenlineobject.obj
+
+# target to build an object file
+objects/brokenlineobject.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj
+.PHONY : objects/brokenlineobject.cpp.obj
+
+objects/brokenlineobject.i: objects/brokenlineobject.cpp.i
+
+.PHONY : objects/brokenlineobject.i
+
+# target to preprocess a source file
+objects/brokenlineobject.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.i
+.PHONY : objects/brokenlineobject.cpp.i
+
+objects/brokenlineobject.s: objects/brokenlineobject.cpp.s
+
+.PHONY : objects/brokenlineobject.s
+
+# target to generate assembly for a file
+objects/brokenlineobject.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.s
+.PHONY : objects/brokenlineobject.cpp.s
+
 objects/rectangleobject.obj: objects/rectangleobject.cpp.obj
 
 .PHONY : objects/rectangleobject.obj
@@ -275,6 +302,9 @@ help:
 	@echo ... objectmanager.obj
 	@echo ... objectmanager.i
 	@echo ... objectmanager.s
+	@echo ... objects/brokenlineobject.obj
+	@echo ... objects/brokenlineobject.i
+	@echo ... objects/brokenlineobject.s
 	@echo ... objects/rectangleobject.obj
 	@echo ... objects/rectangleobject.i
 	@echo ... objects/rectangleobject.s

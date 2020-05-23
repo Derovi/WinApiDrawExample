@@ -4,7 +4,7 @@ const std::vector<std::function<GraphicObject*()>>& ObjectManager::getCreators()
     return creators;
 }
 
-const std::vector<std::string>& ObjectManager::getNames() const {
+const std::vector<std::wstring>& ObjectManager::getNames() const {
     return names;
 }
 
@@ -20,7 +20,7 @@ GraphicObject* ObjectManager::create() {
     return creators[currentId]();
 }
 
-std::string ObjectManager::getName() {
+std::wstring ObjectManager::getName() {
     return names[currentId];
 }
 
@@ -32,4 +32,10 @@ int ObjectManager::size() {
 
 void ObjectManager::prev() {
     currentId = (size() + currentId - 1) % size();
+}
+
+void ObjectManager::registerObject(const std::wstring& name,
+                                   const std::function<GraphicObject*()>& creator) {
+    names.push_back(name);
+    creators.push_back(creator);
 }

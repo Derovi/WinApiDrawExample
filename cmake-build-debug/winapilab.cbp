@@ -95,6 +95,12 @@
 		<Unit filename="D:/codef/winapilab/objectmanager.h">
 			<Option target="winapilab"/>
 		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/brokenlineobject.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/brokenlineobject.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/objects/rectangleobject.cpp">
 			<Option target="winapilab"/>
 		</Unit>

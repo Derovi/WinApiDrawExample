@@ -17,6 +17,8 @@ windows.h
 -
 windowsx.h
 -
+winbase.h
+-
 cmath
 -
 string
@@ -35,6 +37,8 @@ objects/segmentobject.h
 D:/codef/winapilab/objects/segmentobject.h
 objects/rectangleobject.h
 D:/codef/winapilab/objects/rectangleobject.h
+objects/brokenlineobject.h
+D:/codef/winapilab/objects/brokenlineobject.h
 
 D:/codef/winapilab/objectmanager.h
 vector
@@ -42,6 +46,10 @@ vector
 functional
 -
 graphisobject.h
+D:/codef/winapilab/graphisobject.h
+
+D:/codef/winapilab/objects/brokenlineobject.h
+../graphisobject.h
 D:/codef/winapilab/graphisobject.h
 
 D:/codef/winapilab/objects/rectangleobject.h
