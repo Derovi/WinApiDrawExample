@@ -230,6 +230,33 @@ objects/brokenlineobject.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.s
 .PHONY : objects/brokenlineobject.cpp.s
 
+objects/pentagonobject.obj: objects/pentagonobject.cpp.obj
+
+.PHONY : objects/pentagonobject.obj
+
+# target to build an object file
+objects/pentagonobject.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj
+.PHONY : objects/pentagonobject.cpp.obj
+
+objects/pentagonobject.i: objects/pentagonobject.cpp.i
+
+.PHONY : objects/pentagonobject.i
+
+# target to preprocess a source file
+objects/pentagonobject.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.i
+.PHONY : objects/pentagonobject.cpp.i
+
+objects/pentagonobject.s: objects/pentagonobject.cpp.s
+
+.PHONY : objects/pentagonobject.s
+
+# target to generate assembly for a file
+objects/pentagonobject.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.s
+.PHONY : objects/pentagonobject.cpp.s
+
 objects/rectangleobject.obj: objects/rectangleobject.cpp.obj
 
 .PHONY : objects/rectangleobject.obj
@@ -305,6 +332,9 @@ help:
 	@echo ... objects/brokenlineobject.obj
 	@echo ... objects/brokenlineobject.i
 	@echo ... objects/brokenlineobject.s
+	@echo ... objects/pentagonobject.obj
+	@echo ... objects/pentagonobject.i
+	@echo ... objects/pentagonobject.s
 	@echo ... objects/rectangleobject.obj
 	@echo ... objects/rectangleobject.i
 	@echo ... objects/rectangleobject.s

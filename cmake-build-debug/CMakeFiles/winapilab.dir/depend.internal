@@ -9,6 +9,7 @@ CMakeFiles/winapilab.dir/main.cpp.obj
  D:/codef/winapilab/main.cpp
  D:/codef/winapilab/objectmanager.h
  D:/codef/winapilab/objects/brokenlineobject.h
+ D:/codef/winapilab/objects/pentagonobject.h
  D:/codef/winapilab/objects/rectangleobject.h
  D:/codef/winapilab/objects/segmentobject.h
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj
@@ -19,6 +20,10 @@ CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/brokenlineobject.cpp
  D:/codef/winapilab/objects/brokenlineobject.h
+CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj
+ D:/codef/winapilab/graphisobject.h
+ D:/codef/winapilab/objects/pentagonobject.cpp
+ D:/codef/winapilab/objects/pentagonobject.h
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/rectangleobject.cpp

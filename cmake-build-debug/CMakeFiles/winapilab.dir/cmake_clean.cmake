@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/winapilab.dir/objectmanager.cpp.obj"
   "CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj"
   "CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj"
+  "CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj"
   "winapilab.pdb"
   "winapilab.exe"
   "winapilab.exe.manifest"

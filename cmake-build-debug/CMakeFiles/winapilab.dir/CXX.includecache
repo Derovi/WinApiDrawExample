@@ -39,6 +39,8 @@ objects/rectangleobject.h
 D:/codef/winapilab/objects/rectangleobject.h
 objects/brokenlineobject.h
 D:/codef/winapilab/objects/brokenlineobject.h
+objects/pentagonobject.h
+D:/codef/winapilab/objects/pentagonobject.h
 
 D:/codef/winapilab/objectmanager.h
 vector
@@ -49,6 +51,16 @@ graphisobject.h
 D:/codef/winapilab/graphisobject.h
 
 D:/codef/winapilab/objects/brokenlineobject.h
+../graphisobject.h
+D:/codef/winapilab/graphisobject.h
+
+D:/codef/winapilab/objects/pentagonobject.cpp
+pentagonobject.h
+D:/codef/winapilab/objects/pentagonobject.h
+windows.h
+-
+
+D:/codef/winapilab/objects/pentagonobject.h
 ../graphisobject.h
 D:/codef/winapilab/graphisobject.h
 

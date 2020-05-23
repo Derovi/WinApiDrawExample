@@ -13,6 +13,7 @@
 #include "objects/segmentobject.h"
 #include "objects/rectangleobject.h"
 #include "objects/brokenlineobject.h"
+#include "objects/pentagonobject.h"
 
 LRESULT MessagesHandler(
         HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param);
@@ -76,6 +77,9 @@ class MultipleLinesPainter {
         });
         manager.registerObject(L"Broken line", [] {
             return static_cast<GraphicObject*>(new BrokenLineObject());
+        });
+        manager.registerObject(L"Pentagon", [] {
+            return static_cast<GraphicObject*>(new PentagonObject());
         });
     }
 

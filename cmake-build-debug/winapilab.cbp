@@ -101,6 +101,12 @@
 		<Unit filename="D:/codef/winapilab/objects/brokenlineobject.h">
 			<Option target="winapilab"/>
 		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/pentagonobject.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/pentagonobject.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/objects/rectangleobject.cpp">
 			<Option target="winapilab"/>
 		</Unit>
