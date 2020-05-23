@@ -149,7 +149,29 @@ class MultipleLinesPainter {
                 int height = rect.bottom - rect.top;
 
                 std::wstring text = L"Selected object: " + manager.getName();
-                TextOutW(hdc, width / 2 - 3 * lstrlenW(text.c_str()), height - 100, text.c_str(),
+                TextOutW(hdc, width / 2 - 3 * lstrlenW(text.c_str()), 50, text.c_str(),
+                        lstrlenW(text.c_str()));
+
+                // draw help
+
+                text = L"Use left and right arrows to change drawing object";
+                TextOutW(hdc, 100, height - 200, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use left mouse button to add a point to the drawing object";
+                TextOutW(hdc, 100, height - 160, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use right mouse button to undo object drawing";
+                TextOutW(hdc, 100, height - 120, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use ENTER to finish object drawing";
+                TextOutW(hdc, 100, height - 80, text.c_str(),
+                         lstrlenW(text.c_str()));
+
+                text = L"Use ctrl + C to clear all objects from the screen";
+                TextOutW(hdc, 100, height - 40, text.c_str(),
                          lstrlenW(text.c_str()));
 
                 DeleteObject(hFont);
