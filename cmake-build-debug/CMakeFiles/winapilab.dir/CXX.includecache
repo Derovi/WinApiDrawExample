@@ -34,6 +34,10 @@ D:/codef/winapilab/objectmanager.h
 objects/segmentobject.h
 D:/codef/winapilab/objects/segmentobject.h
 
+D:/codef/winapilab/objectmanager.cpp
+objectmanager.h
+D:/codef/winapilab/objectmanager.h
+
 D:/codef/winapilab/objectmanager.h
 vector
 -
@@ -41,6 +45,12 @@ functional
 -
 graphisobject.h
 D:/codef/winapilab/graphisobject.h
+
+D:/codef/winapilab/objects/segmentobject.cpp
+segmentobject.h
+D:/codef/winapilab/objects/segmentobject.h
+windows.h
+-
 
 D:/codef/winapilab/objects/segmentobject.h
 ../graphisobject.h

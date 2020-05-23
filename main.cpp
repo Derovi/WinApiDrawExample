@@ -90,6 +90,13 @@ class MultipleLinesPainter {
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
+            case WM_RBUTTONDOWN: {
+                if (!objects.empty()) {
+                    objects.pop_back();
+                }
+                InvalidateRect(window_handle, nullptr, true);
+                break;
+            }
             case WM_PAINT: {
                 PAINTSTRUCT ps;
                 HDC hdc = BeginPaint(window_handle, &ps);
