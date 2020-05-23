@@ -26,9 +26,14 @@ void Animation::resume() {
     paused = false;
 }
 
-void Animation::restart() {
+void Animation::restart(HWND& hwnd, HDC hdc) {
     finished = false;
     time = 0;
+    int delta = 1200;
+    int subDelta = 5;
+    for (int index = 0; index < delta * speed / subDelta; ++index) {
+        perform(subDelta, hwnd, hdc);
+    }
 }
 
 void Animation::tick(HWND& hwnd, HDC hdc) {

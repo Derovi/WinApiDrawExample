@@ -25,7 +25,7 @@ class Animation {
 
     void resume();
 
-    void restart();
+    void restart(HWND& hwnd, HDC hdc);
 
     double getSpeed() const;
 

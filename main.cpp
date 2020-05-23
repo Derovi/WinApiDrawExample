@@ -133,6 +133,9 @@ class MultipleLinesPainter {
                 break;
             }
             case WM_KEYDOWN: {
+                PAINTSTRUCT ps;
+
+                HDC hdc = BeginPaint(window_handle, &ps);
                 if (w_param == VK_LEFT) {
                     manager.prev();
                 } else if (w_param == VK_RIGHT) {
@@ -144,7 +147,7 @@ class MultipleLinesPainter {
                 } else if (w_param == 'C' && GetKeyState(VK_CONTROL) < 0) {
                     objects.clear();
                 } else if (w_param == 'R') {
-                    animation->restart();
+                    animation->restart(window_handle, hdc);
                 } else if (w_param == VK_SPACE) {
                     if (animation->isPlaying()) {
                         animation->pause();
@@ -152,6 +155,7 @@ class MultipleLinesPainter {
                         animation->resume();
                     }
                 }
+                EndPaint(window_handle, &ps);
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
