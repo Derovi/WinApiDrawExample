@@ -1,0 +1,3 @@
+D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir
+D:/codef/winapilab/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/codef/winapilab/cmake-build-debug/CMakeFiles/rebuild_cache.dir
