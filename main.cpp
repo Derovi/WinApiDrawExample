@@ -15,6 +15,7 @@
 #include "objects/brokenlineobject.h"
 #include "objects/pentagonobject.h"
 #include "objects/circleobject.h"
+#include "objects/ellipseobject.h"
 
 LRESULT MessagesHandler(
         HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param);
@@ -84,6 +85,9 @@ class MultipleLinesPainter {
         });
         manager.registerObject(L"Circle", [] {
             return static_cast<GraphicObject*>(new CircleObject());
+        });
+        manager.registerObject(L"Ellipse", [] {
+            return static_cast<GraphicObject*>(new EllipseObject());
         });
     }
 

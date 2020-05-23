@@ -107,6 +107,12 @@
 		<Unit filename="D:/codef/winapilab/objects/circleobject.h">
 			<Option target="winapilab"/>
 		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/ellipseobject.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/objects/ellipseobject.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/objects/pentagonobject.cpp">
 			<Option target="winapilab"/>
 		</Unit>

@@ -257,6 +257,33 @@ objects/circleobject.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/circleobject.cpp.s
 .PHONY : objects/circleobject.cpp.s
 
+objects/ellipseobject.obj: objects/ellipseobject.cpp.obj
+
+.PHONY : objects/ellipseobject.obj
+
+# target to build an object file
+objects/ellipseobject.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj
+.PHONY : objects/ellipseobject.cpp.obj
+
+objects/ellipseobject.i: objects/ellipseobject.cpp.i
+
+.PHONY : objects/ellipseobject.i
+
+# target to preprocess a source file
+objects/ellipseobject.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.i
+.PHONY : objects/ellipseobject.cpp.i
+
+objects/ellipseobject.s: objects/ellipseobject.cpp.s
+
+.PHONY : objects/ellipseobject.s
+
+# target to generate assembly for a file
+objects/ellipseobject.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.s
+.PHONY : objects/ellipseobject.cpp.s
+
 objects/pentagonobject.obj: objects/pentagonobject.cpp.obj
 
 .PHONY : objects/pentagonobject.obj
@@ -362,6 +389,9 @@ help:
 	@echo ... objects/circleobject.obj
 	@echo ... objects/circleobject.i
 	@echo ... objects/circleobject.s
+	@echo ... objects/ellipseobject.obj
+	@echo ... objects/ellipseobject.i
+	@echo ... objects/ellipseobject.s
 	@echo ... objects/pentagonobject.obj
 	@echo ... objects/pentagonobject.i
 	@echo ... objects/pentagonobject.s

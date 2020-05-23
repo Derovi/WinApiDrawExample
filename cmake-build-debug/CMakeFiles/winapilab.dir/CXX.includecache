@@ -12,15 +12,15 @@ vector
 windef.h
 -
 
-D:/codef/winapilab/objects/circleobject.cpp
-circleobject.h
-D:/codef/winapilab/objects/circleobject.h
+D:/codef/winapilab/objects/ellipseobject.cpp
+ellipseobject.h
+D:/codef/winapilab/objects/ellipseobject.h
 windows.h
 -
 cmath
 -
 
-D:/codef/winapilab/objects/circleobject.h
+D:/codef/winapilab/objects/ellipseobject.h
 ../graphisobject.h
 D:/codef/winapilab/graphisobject.h
 
