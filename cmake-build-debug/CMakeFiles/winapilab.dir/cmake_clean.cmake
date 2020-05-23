@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj"
   "CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj"
   "CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj"
+  "CMakeFiles/winapilab.dir/animation.cpp.obj"
   "winapilab.pdb"
   "winapilab.exe"
   "winapilab.exe.manifest"

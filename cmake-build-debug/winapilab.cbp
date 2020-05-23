@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/codef/winapilab/animation.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/animation.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/graphisobject.cpp">
 			<Option target="winapilab"/>
 		</Unit>

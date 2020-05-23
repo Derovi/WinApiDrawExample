@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/codef/winapilab/animation.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/animation.cpp.obj"
   "D:/codef/winapilab/graphisobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/graphisobject.cpp.obj"
   "D:/codef/winapilab/main.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/main.cpp.obj"
   "D:/codef/winapilab/objectmanager.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objectmanager.cpp.obj"

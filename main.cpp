@@ -5,7 +5,6 @@
 #include <cmath>
 #include <string>
 #include <vector>
-#include <functional>
 #include <iostream>
 
 #include "graphisobject.h"
@@ -17,6 +16,7 @@
 #include "objects/circleobject.h"
 #include "objects/ellipseobject.h"
 #include "objects/pieobject.h"
+#include "animation.h"
 
 LRESULT MessagesHandler(
         HWND window_handle, UINT message_code, WPARAM w_param, LPARAM l_param);
@@ -93,12 +93,14 @@ class MultipleLinesPainter {
         manager.registerObject(L"Pie", [] {
             return static_cast<GraphicObject*>(new PieObject());
         });
+        animation = new Animation(&objects);
     }
 
     ~MultipleLinesPainter() {
         for (auto object : objects) {
             delete object;
         }
+        delete animation;
     }
 
     LRESULT Handle(
@@ -133,11 +135,21 @@ class MultipleLinesPainter {
                     }
                 } else if (w_param == 'C' && GetKeyState(VK_CONTROL) < 0) {
                     objects.clear();
+                } else if (w_param == 'R') {
+                    animation->restart();
+                } else if (w_param == VK_SPACE) {
+                    if (animation->isPlaying()) {
+                        animation->pause();
+                    } else {
+                        animation->resume();
+                    }
                 }
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
             case WM_PAINT: {
+                animation->tick();
+
                 PAINTSTRUCT ps;
 
                 HDC hdc = BeginPaint(window_handle, &ps);
@@ -222,6 +234,7 @@ class MultipleLinesPainter {
     std::vector<GraphicObject*> objects;
     ObjectManager manager;
     int64_t lastTime;
+    Animation* animation;
 };
 
 LRESULT MessagesHandler(

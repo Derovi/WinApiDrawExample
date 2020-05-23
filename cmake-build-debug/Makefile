@@ -122,6 +122,33 @@ winapilab/fast:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/build
 .PHONY : winapilab/fast
 
+animation.obj: animation.cpp.obj
+
+.PHONY : animation.obj
+
+# target to build an object file
+animation.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/animation.cpp.obj
+.PHONY : animation.cpp.obj
+
+animation.i: animation.cpp.i
+
+.PHONY : animation.i
+
+# target to preprocess a source file
+animation.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/animation.cpp.i
+.PHONY : animation.cpp.i
+
+animation.s: animation.cpp.s
+
+.PHONY : animation.s
+
+# target to generate assembly for a file
+animation.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/animation.cpp.s
+.PHONY : animation.cpp.s
+
 graphisobject.obj: graphisobject.cpp.obj
 
 .PHONY : graphisobject.obj
@@ -401,6 +428,9 @@ help:
 	@echo ... winapilab
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... animation.obj
+	@echo ... animation.i
+	@echo ... animation.s
 	@echo ... graphisobject.obj
 	@echo ... graphisobject.i
 	@echo ... graphisobject.s
