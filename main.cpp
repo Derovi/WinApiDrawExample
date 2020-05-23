@@ -101,6 +101,19 @@ class MultipleLinesPainter {
                 InvalidateRect(window_handle, nullptr, true);
                 break;
             }
+            case WM_KEYDOWN: {
+                if (w_param == VK_LEFT) {
+                    manager.prev();
+                } else if (w_param == VK_RIGHT){
+                    manager.next();
+                } else if (w_param == VK_RETURN) {
+                    if (!objects.empty()) {
+                        objects.back()->finish();
+                    }
+                }
+                InvalidateRect(window_handle, nullptr, true);
+                break;
+            }
             case WM_PAINT: {
                 PAINTSTRUCT ps;
                 HDC hdc = BeginPaint(window_handle, &ps);

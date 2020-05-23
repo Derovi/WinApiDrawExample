@@ -12,13 +12,43 @@ vector
 windef.h
 -
 
-D:/codef/winapilab/objects/rectangleobject.cpp
-rectangleobject.h
-D:/codef/winapilab/objects/rectangleobject.h
+D:/codef/winapilab/main.cpp
 windows.h
 -
+windowsx.h
+-
+cmath
+-
+string
+-
+vector
+-
+functional
+-
+iostream
+-
+graphisobject.h
+D:/codef/winapilab/graphisobject.h
+objectmanager.h
+D:/codef/winapilab/objectmanager.h
+objects/segmentobject.h
+D:/codef/winapilab/objects/segmentobject.h
+objects/rectangleobject.h
+D:/codef/winapilab/objects/rectangleobject.h
+
+D:/codef/winapilab/objectmanager.h
+vector
+-
+functional
+-
+graphisobject.h
+D:/codef/winapilab/graphisobject.h
 
 D:/codef/winapilab/objects/rectangleobject.h
+../graphisobject.h
+D:/codef/winapilab/graphisobject.h
+
+D:/codef/winapilab/objects/segmentobject.h
 ../graphisobject.h
 D:/codef/winapilab/graphisobject.h
 
