@@ -6,9 +6,15 @@ CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj
  D:/codef/winapilab/actions/moveaction.cpp
  D:/codef/winapilab/actions/moveaction.h
  D:/codef/winapilab/graphisobject.h
+CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj
+ D:/codef/winapilab/action.h
+ D:/codef/winapilab/actions/resizeaction.cpp
+ D:/codef/winapilab/actions/resizeaction.h
+ D:/codef/winapilab/graphisobject.h
 CMakeFiles/winapilab.dir/animation.cpp.obj
  D:/codef/winapilab/action.h
  D:/codef/winapilab/actions/moveaction.h
+ D:/codef/winapilab/actions/resizeaction.h
  D:/codef/winapilab/animation.cpp
  D:/codef/winapilab/animation.h
  D:/codef/winapilab/graphisobject.h

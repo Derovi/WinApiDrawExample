@@ -149,6 +149,33 @@ actions/moveaction.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/moveaction.cpp.s
 .PHONY : actions/moveaction.cpp.s
 
+actions/resizeaction.obj: actions/resizeaction.cpp.obj
+
+.PHONY : actions/resizeaction.obj
+
+# target to build an object file
+actions/resizeaction.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj
+.PHONY : actions/resizeaction.cpp.obj
+
+actions/resizeaction.i: actions/resizeaction.cpp.i
+
+.PHONY : actions/resizeaction.i
+
+# target to preprocess a source file
+actions/resizeaction.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/resizeaction.cpp.i
+.PHONY : actions/resizeaction.cpp.i
+
+actions/resizeaction.s: actions/resizeaction.cpp.s
+
+.PHONY : actions/resizeaction.s
+
+# target to generate assembly for a file
+actions/resizeaction.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/actions/resizeaction.cpp.s
+.PHONY : actions/resizeaction.cpp.s
+
 animation.obj: animation.cpp.obj
 
 .PHONY : animation.obj
@@ -458,6 +485,9 @@ help:
 	@echo ... actions/moveaction.obj
 	@echo ... actions/moveaction.i
 	@echo ... actions/moveaction.s
+	@echo ... actions/resizeaction.obj
+	@echo ... actions/resizeaction.i
+	@echo ... actions/resizeaction.s
 	@echo ... animation.obj
 	@echo ... animation.i
 	@echo ... animation.s

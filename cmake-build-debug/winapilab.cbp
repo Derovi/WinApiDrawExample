@@ -89,6 +89,12 @@
 		<Unit filename="D:/codef/winapilab/actions/moveaction.h">
 			<Option target="winapilab"/>
 		</Unit>
+		<Unit filename="D:/codef/winapilab/actions/resizeaction.cpp">
+			<Option target="winapilab"/>
+		</Unit>
+		<Unit filename="D:/codef/winapilab/actions/resizeaction.h">
+			<Option target="winapilab"/>
+		</Unit>
 		<Unit filename="D:/codef/winapilab/animation.cpp">
 			<Option target="winapilab"/>
 		</Unit>

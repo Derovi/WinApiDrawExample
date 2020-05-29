@@ -1,5 +1,6 @@
 #include "animation.h"
 #include "actions/moveaction.h"
+#include "actions/resizeaction.h"
 
 #include <windows.h>
 #include <windowsx.h>
@@ -42,7 +43,8 @@ void Animation::tick(HWND& hwnd, HDC hdc) {
     }
     int sz = actions.size();
     for (int index = sz; index < objects->size(); ++index) {
-        actions.push_back(new MoveAction((*objects)[index]));
+        //actions.push_back(new MoveAction((*objects)[index]));
+        actions.push_back(new ResizeAction((*objects)[index]));
     }
     int64_t currentTime = GetCurrentTime();
     int64_t delta = currentTime - lastTickTime;

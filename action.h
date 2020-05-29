@@ -2,6 +2,8 @@
 #define ACTION_H
 
 #include "graphisobject.h"
+
+#include <chrono>
 #include <windows.h>
 #include <windowsx.h>
 #include <winbase.h>
