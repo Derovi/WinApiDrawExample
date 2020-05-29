@@ -165,6 +165,10 @@ class MultipleLinesPainter {
                     }
                 } else if (w_param == 'M') {
                     animation->changeMode();
+                } else if (w_param == 'T') {
+                    for (auto* object : objects) {
+                        object->getColor().setTransparent(!object->getColor().isTransparent());
+                    }
                 } else if (w_param == 'R') {
                     animation->restart(window_handle, hdc);
                 } else if (w_param == 'I') {

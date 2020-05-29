@@ -17,7 +17,7 @@ void RectangleObject::draw(HWND& hwnd, HDC hdc) {
 
     HBRUSH holdBrush;
 
-    if (isReady()) {
+    if (isReady() && !getColor().isTransparent()) {
         HBRUSH hBrush1 = CreateSolidBrush(getColor().getColorRef());
         holdBrush = static_cast<HBRUSH>(SelectObject(hdc, hBrush1));
     }

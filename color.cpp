@@ -37,3 +37,11 @@ void Color::change() {
     g = rand() % 255;
     b = rand() % 255;
 }
+
+bool Color::isTransparent() const {
+    return transparent;
+}
+
+void Color::setTransparent(bool transparent) {
+    Color::transparent = transparent;
+}

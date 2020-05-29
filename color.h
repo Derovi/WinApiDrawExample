@@ -27,10 +27,16 @@ class Color {
 
     void change();
 
+    bool isTransparent() const;
+
+    void setTransparent(bool transparent);
+
   private:
     int r;
     int g;
     int b;
+
+    bool transparent = false;
 };
 
 
