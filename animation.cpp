@@ -43,8 +43,7 @@ void Animation::tick(HWND& hwnd, HDC hdc) {
     }
     int sz = actions.size();
     for (int index = sz; index < objects->size(); ++index) {
-        //actions.push_back(new MoveAction((*objects)[index]));
-        actions.push_back(new ResizeAction((*objects)[index]));
+        loadObject((*objects)[index]);
     }
     int64_t currentTime = GetCurrentTime();
     int64_t delta = currentTime - lastTickTime;
@@ -76,5 +75,24 @@ void Animation::setSpeed(double speed) {
 Animation::~Animation() {
     for (auto action : actions) {
         delete action;
+    }
+}
+
+void Animation::changeMode() {
+    for (auto action : actions) {
+        delete action;
+    }
+    actions.clear();
+    mode = (mode + 1) % 2;
+    for (auto* object : *objects) {
+        loadObject(object);
+    }
+}
+
+void Animation::loadObject(GraphicObject* object) {
+    if (mode == 0) {
+        actions.push_back(new MoveAction(object));
+    } else {
+        actions.push_back(new ResizeAction(object));
     }
 }

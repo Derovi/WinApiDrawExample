@@ -4,11 +4,13 @@
 CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj: ../action.h
 CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj: ../actions/moveaction.cpp
 CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj: ../actions/moveaction.h
+CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj: ../graphisobject.h
 
 CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj: ../action.h
 CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj: ../actions/resizeaction.cpp
 CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj: ../actions/resizeaction.h
+CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj: ../graphisobject.h
 
 CMakeFiles/winapilab.dir/animation.cpp.obj: ../action.h
@@ -16,13 +18,19 @@ CMakeFiles/winapilab.dir/animation.cpp.obj: ../actions/moveaction.h
 CMakeFiles/winapilab.dir/animation.cpp.obj: ../actions/resizeaction.h
 CMakeFiles/winapilab.dir/animation.cpp.obj: ../animation.cpp
 CMakeFiles/winapilab.dir/animation.cpp.obj: ../animation.h
+CMakeFiles/winapilab.dir/animation.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/animation.cpp.obj: ../graphisobject.h
 
+CMakeFiles/winapilab.dir/color.cpp.obj: ../color.cpp
+CMakeFiles/winapilab.dir/color.cpp.obj: ../color.h
+
+CMakeFiles/winapilab.dir/graphisobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/graphisobject.cpp.obj: ../graphisobject.cpp
 CMakeFiles/winapilab.dir/graphisobject.cpp.obj: ../graphisobject.h
 
 CMakeFiles/winapilab.dir/main.cpp.obj: ../action.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../animation.h
+CMakeFiles/winapilab.dir/main.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objectmanager.h
@@ -34,34 +42,42 @@ CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/pieobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/rectangleobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj: ../objects/segmentobject.h
 
+CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../objectmanager.cpp
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj: ../objectmanager.h
 
+CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj: ../objects/brokenlineobject.cpp
 CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj: ../objects/brokenlineobject.h
 
+CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj: ../objects/circleobject.cpp
 CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj: ../objects/circleobject.h
 
+CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj: ../objects/ellipseobject.cpp
 CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj: ../objects/ellipseobject.h
 
+CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../objects/pentagonobject.cpp
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj: ../objects/pentagonobject.h
 
+CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../objects/pieobject.cpp
 CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj: ../objects/pieobject.h
 
+CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../objects/rectangleobject.cpp
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj: ../objects/rectangleobject.h
 
+CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../color.h
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../graphisobject.h
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../objects/segmentobject.cpp
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj: ../objects/segmentobject.h

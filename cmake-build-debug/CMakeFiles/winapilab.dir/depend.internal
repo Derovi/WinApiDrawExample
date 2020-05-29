@@ -5,11 +5,13 @@ CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj
  D:/codef/winapilab/action.h
  D:/codef/winapilab/actions/moveaction.cpp
  D:/codef/winapilab/actions/moveaction.h
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
 CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj
  D:/codef/winapilab/action.h
  D:/codef/winapilab/actions/resizeaction.cpp
  D:/codef/winapilab/actions/resizeaction.h
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
 CMakeFiles/winapilab.dir/animation.cpp.obj
  D:/codef/winapilab/action.h
@@ -17,13 +19,19 @@ CMakeFiles/winapilab.dir/animation.cpp.obj
  D:/codef/winapilab/actions/resizeaction.h
  D:/codef/winapilab/animation.cpp
  D:/codef/winapilab/animation.h
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
+CMakeFiles/winapilab.dir/color.cpp.obj
+ D:/codef/winapilab/color.cpp
+ D:/codef/winapilab/color.h
 CMakeFiles/winapilab.dir/graphisobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.cpp
  D:/codef/winapilab/graphisobject.h
 CMakeFiles/winapilab.dir/main.cpp.obj
  D:/codef/winapilab/action.h
  D:/codef/winapilab/animation.h
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/main.cpp
  D:/codef/winapilab/objectmanager.h
@@ -35,34 +43,42 @@ CMakeFiles/winapilab.dir/main.cpp.obj
  D:/codef/winapilab/objects/rectangleobject.h
  D:/codef/winapilab/objects/segmentobject.h
 CMakeFiles/winapilab.dir/objectmanager.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objectmanager.cpp
  D:/codef/winapilab/objectmanager.h
 CMakeFiles/winapilab.dir/objects/brokenlineobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/brokenlineobject.cpp
  D:/codef/winapilab/objects/brokenlineobject.h
 CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/circleobject.cpp
  D:/codef/winapilab/objects/circleobject.h
 CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/ellipseobject.cpp
  D:/codef/winapilab/objects/ellipseobject.h
 CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/pentagonobject.cpp
  D:/codef/winapilab/objects/pentagonobject.h
 CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/pieobject.cpp
  D:/codef/winapilab/objects/pieobject.h
 CMakeFiles/winapilab.dir/objects/rectangleobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/rectangleobject.cpp
  D:/codef/winapilab/objects/rectangleobject.h
 CMakeFiles/winapilab.dir/objects/segmentobject.cpp.obj
+ D:/codef/winapilab/color.h
  D:/codef/winapilab/graphisobject.h
  D:/codef/winapilab/objects/segmentobject.cpp
  D:/codef/winapilab/objects/segmentobject.h

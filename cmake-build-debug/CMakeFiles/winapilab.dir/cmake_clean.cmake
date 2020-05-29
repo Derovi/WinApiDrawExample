@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/winapilab.dir/animation.cpp.obj"
   "CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj"
   "CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj"
+  "CMakeFiles/winapilab.dir/color.cpp.obj"
   "winapilab.pdb"
   "winapilab.exe"
   "winapilab.exe.manifest"

@@ -25,6 +25,8 @@ class Animation {
 
     void resume();
 
+    void changeMode();
+
     void restart(HWND& hwnd, HDC hdc);
 
     double getSpeed() const;
@@ -39,6 +41,8 @@ class Animation {
 
     void perform(int delta, HWND& hwnd, HDC hdc);
 
+    void loadObject(GraphicObject* object);
+
     bool paused = true;
     bool finished = false;
 
@@ -48,6 +52,7 @@ class Animation {
     std::mt19937 rnd;
 
     double speed = 1;
+    int mode = 0;
 };
 
 

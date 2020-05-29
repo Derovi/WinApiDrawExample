@@ -149,14 +149,28 @@ class MultipleLinesPainter {
                     manager.prev();
                 } else if (w_param == VK_RIGHT) {
                     manager.next();
+                } else if (w_param == VK_UP) {
+                    animation->setSpeed(animation->getSpeed() + 0.1);
+                } else if (w_param == VK_DOWN) {
+                    animation->setSpeed(std::max(0.0, animation->getSpeed() - 0.1));
                 } else if (w_param == VK_RETURN) {
                     if (!objects.empty()) {
                         objects.back()->finish();
                     }
                 } else if (w_param == 'C' && GetKeyState(VK_CONTROL) < 0) {
                     objects.clear();
+                } else if (w_param == 'C') {
+                    for (auto* object : objects) {
+                        object->getColor().change();
+                    }
+                } else if (w_param == 'M') {
+                    animation->changeMode();
                 } else if (w_param == 'R') {
                     animation->restart(window_handle, hdc);
+                } else if (w_param == 'I') {
+                    ++penWidth;
+                } else if (w_param == 'D') {
+                    penWidth = std::max(penWidth - 1, 1);
                 } else if (w_param == VK_SPACE) {
                     if (animation->isPlaying()) {
                         animation->pause();
@@ -197,11 +211,24 @@ class MultipleLinesPainter {
 
                 SelectObject(hdcMem, GetStockObject(HOLLOW_BRUSH));
 
+                LOGBRUSH brush;
+                COLORREF col = RGB(0, 0, 0);
+                DWORD pen_style = PS_SOLID | PS_JOIN_MITER | PS_GEOMETRIC;
+
+                brush.lbStyle = BS_SOLID;
+                brush.lbColor = col;
+                brush.lbHatch = 0;
+
+                HPEN hWhitePen = ExtCreatePen(pen_style, penWidth, &brush, 0, NULL);
+                HPEN hOldPen = static_cast<HPEN>(SelectObject(hdcMem, hWhitePen));
+
                 animation->tick(window_handle, hdcMem);
 
                 for (auto object : objects) {
                     object->draw(window_handle, hdcMem);
                 }
+
+                SelectObject(hdc, hOldPen);
 
                 // draw text
 
@@ -291,6 +318,7 @@ class MultipleLinesPainter {
     Animation* animation;
     HBITMAP background = NULL;
 
+    int penWidth = 4;
     int TIMER_ID;
 };
 

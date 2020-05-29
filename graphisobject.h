@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <windef.h>
+#include "color.h"
 
 class GraphicObject {
   public:
@@ -17,8 +18,15 @@ class GraphicObject {
     std::vector<POINT>& getPoints();
 
     virtual ~GraphicObject() = default;
+
+    Color& getColor();
+
+    void setColor(const Color& color);
+
   private:
     std::vector<POINT> points;
+
+    Color color;
 };
 
 

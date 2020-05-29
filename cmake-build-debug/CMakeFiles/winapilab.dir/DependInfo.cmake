@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "D:/codef/winapilab/actions/moveaction.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj"
   "D:/codef/winapilab/actions/resizeaction.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/actions/resizeaction.cpp.obj"
   "D:/codef/winapilab/animation.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/animation.cpp.obj"
+  "D:/codef/winapilab/color.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/color.cpp.obj"
   "D:/codef/winapilab/graphisobject.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/graphisobject.cpp.obj"
   "D:/codef/winapilab/main.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/main.cpp.obj"
   "D:/codef/winapilab/objectmanager.cpp" "D:/codef/winapilab/cmake-build-debug/CMakeFiles/winapilab.dir/objectmanager.cpp.obj"

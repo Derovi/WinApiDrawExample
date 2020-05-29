@@ -203,6 +203,33 @@ animation.cpp.s:
 	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/animation.cpp.s
 .PHONY : animation.cpp.s
 
+color.obj: color.cpp.obj
+
+.PHONY : color.obj
+
+# target to build an object file
+color.cpp.obj:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/color.cpp.obj
+.PHONY : color.cpp.obj
+
+color.i: color.cpp.i
+
+.PHONY : color.i
+
+# target to preprocess a source file
+color.cpp.i:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/color.cpp.i
+.PHONY : color.cpp.i
+
+color.s: color.cpp.s
+
+.PHONY : color.s
+
+# target to generate assembly for a file
+color.cpp.s:
+	$(MAKE) -f CMakeFiles\winapilab.dir\build.make CMakeFiles/winapilab.dir/color.cpp.s
+.PHONY : color.cpp.s
+
 graphisobject.obj: graphisobject.cpp.obj
 
 .PHONY : graphisobject.obj
@@ -491,6 +518,9 @@ help:
 	@echo ... animation.obj
 	@echo ... animation.i
 	@echo ... animation.s
+	@echo ... color.obj
+	@echo ... color.i
+	@echo ... color.s
 	@echo ... graphisobject.obj
 	@echo ... graphisobject.i
 	@echo ... graphisobject.s
