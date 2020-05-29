@@ -13,12 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="68d32b9e-52db-4927-bf7e-2339fa01270e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/moveaction.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/actions/moveaction.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/animation.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/animation.h" beforeDir="false" afterPath="$PROJECT_DIR$/animation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/actions/moveaction.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/animation.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/animation.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/winapilab.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/winapilab.exe" afterDir="false" />
@@ -75,7 +70,9 @@
       <option name="presentableId" value="Default" />
       <updated>1590191641774</updated>
       <workItem from="1590191642988" duration="8592000" />
-      <workItem from="1590220238157" duration="11409000" />
+      <workItem from="1590220238157" duration="15398000" />
+      <workItem from="1590316214069" duration="606000" />
+      <workItem from="1590751008045" duration="5166000" />
     </task>
     <servers />
   </component>
