@@ -12,7 +12,7 @@
 #include "objects/segmentobject.h"
 #include "objects/rectangleobject.h"
 #include "objects/brokenlineobject.h"
-#include "objects/pentagonobject.h"
+#include "objects/polygon.h"
 #include "objects/circleobject.h"
 #include "objects/ellipseobject.h"
 #include "objects/pieobject.h"
@@ -88,7 +88,7 @@ class MultipleLinesPainter {
             return static_cast<GraphicObject*>(new BrokenLineObject());
         });
         manager.registerObject(L"Pentagon", [] {
-            return static_cast<GraphicObject*>(new PentagonObject());
+            return static_cast<GraphicObject*>(new PolygonObject());
         });
         manager.registerObject(L"Circle", [] {
             return static_cast<GraphicObject*>(new CircleObject());

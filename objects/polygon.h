@@ -1,9 +1,9 @@
-#ifndef PENTAGONOBJECT_H
-#define PENTAGONOBJECT_H
+#ifndef POLYGON_H
+#define POLYGON_H
 
 #include "../graphisobject.h"
 
-class PentagonObject : public GraphicObject {
+class PolygonObject : public GraphicObject {
   public:
     void finish() override;
 
@@ -16,4 +16,4 @@ class PentagonObject : public GraphicObject {
 };
 
 
-#endif //PENTAGONOBJECT_H
+#endif //POLYGON_H

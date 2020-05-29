@@ -11,19 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68d32b9e-52db-4927-bf7e-2339fa01270e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/circleobject.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/ellipseobject.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pentagonobject.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/winapilab.dir/objects/pieobject.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/winapilab.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/winapilab.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/circleobject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/objects/circleobject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/ellipseobject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/objects/ellipseobject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/pentagonobject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/objects/pentagonobject.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objects/pieobject.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/objects/pieobject.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="68d32b9e-52db-4927-bf7e-2339fa01270e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +65,7 @@
       <workItem from="1590191642988" duration="8592000" />
       <workItem from="1590220238157" duration="15398000" />
       <workItem from="1590316214069" duration="606000" />
-      <workItem from="1590751008045" duration="9427000" />
+      <workItem from="1590751008045" duration="9723000" />
     </task>
     <servers />
   </component>

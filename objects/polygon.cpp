@@ -1,18 +1,18 @@
-#include "pentagonobject.h"
+#include "polygon.h"
 #include <windows.h>
 
-void PentagonObject::finish() {
+void PolygonObject::finish() {
     if (getPoints().size() < 3) {
         return;
     }
     finished = true;
 }
 
-bool PentagonObject::isReady() {
+bool PolygonObject::isReady() {
     return finished;
 }
 
-void PentagonObject::draw(HWND& hwnd, HDC hdc) {
+void PolygonObject::draw(HWND& hwnd, HDC hdc) {
     if (getPoints().empty()) {
         return;
     }
@@ -48,7 +48,6 @@ void PentagonObject::draw(HWND& hwnd, HDC hdc) {
         MoveToEx(hdc, getPoints().back().x, getPoints().back().y, nullptr);
         LineTo(hdc, getPoints().front().x, getPoints().front().y);
     }
-
     if (isReady()) {
         SelectObject(hdc, holdBrush);
     }
