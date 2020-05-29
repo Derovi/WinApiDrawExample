@@ -12,6 +12,14 @@ void CircleObject::draw(HWND& hwnd, HDC hdc) {
     if (getPoints().empty()) {
         return;
     }
+
+    HBRUSH holdBrush;
+
+    if (isReady() && !getColor().isTransparent()) {
+        HBRUSH hBrush1 = CreateSolidBrush(getColor().getColorRef());
+        holdBrush = static_cast<HBRUSH>(SelectObject(hdc, hBrush1));
+    }
+
     if (!isReady()) {
         POINT cursor;
         GetCursorPos(&cursor);
@@ -33,5 +41,9 @@ void CircleObject::draw(HWND& hwnd, HDC hdc) {
                                (getPoints().back().y - getPoints().front().y));
         Ellipse(hdc, getPoints().front().x - radius, getPoints().front().y - radius,
                 getPoints().front().x + radius, getPoints().front().y + radius);
+    }
+
+    if (isReady()) {
+        SelectObject(hdc, holdBrush);
     }
 }

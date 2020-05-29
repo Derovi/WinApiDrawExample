@@ -16,6 +16,14 @@ void PentagonObject::draw(HWND& hwnd, HDC hdc) {
     if (getPoints().empty()) {
         return;
     }
+
+    HBRUSH holdBrush;
+
+    if (isReady() && !getColor().isTransparent()) {
+        HBRUSH hBrush1 = CreateSolidBrush(getColor().getColorRef());
+        holdBrush = static_cast<HBRUSH>(SelectObject(hdc, hBrush1));
+    }
+
     for (int index = 0; index < getPoints().size(); ++index) {
         if (!isReady()) {
             Ellipse(hdc, getPoints()[index].x - 5, getPoints()[index].y - 5,
@@ -41,4 +49,7 @@ void PentagonObject::draw(HWND& hwnd, HDC hdc) {
         LineTo(hdc, getPoints().front().x, getPoints().front().y);
     }
 
+    if (isReady()) {
+        SelectObject(hdc, holdBrush);
+    }
 }

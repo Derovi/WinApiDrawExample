@@ -12,6 +12,14 @@ void EllipseObject::draw(HWND& hwnd, HDC hdc) {
     if (getPoints().empty()) {
         return;
     }
+
+    HBRUSH holdBrush;
+
+    if (isReady() && !getColor().isTransparent()) {
+        HBRUSH hBrush1 = CreateSolidBrush(getColor().getColorRef());
+        holdBrush = static_cast<HBRUSH>(SelectObject(hdc, hBrush1));
+    }
+
     POINT cursor;
     GetCursorPos(&cursor);
     ScreenToClient(hwnd, &cursor);
@@ -38,5 +46,9 @@ void EllipseObject::draw(HWND& hwnd, HDC hdc) {
         int yDelta = std::abs(getPoints()[1].y - getPoints().front().y);
         Ellipse(hdc, getPoints().front().x - xDelta, getPoints().front().y - yDelta,
                 getPoints().front().x + xDelta, getPoints().front().y + yDelta);
+    }
+
+    if (isReady()) {
+        SelectObject(hdc, holdBrush);
     }
 }

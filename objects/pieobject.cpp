@@ -12,6 +12,14 @@ void PieObject::draw(HWND& hwnd, HDC hdc) {
     if (getPoints().empty()) {
         return;
     }
+
+    HBRUSH holdBrush;
+
+    if (isReady() && !getColor().isTransparent()) {
+        HBRUSH hBrush1 = CreateSolidBrush(getColor().getColorRef());
+        holdBrush = static_cast<HBRUSH>(SelectObject(hdc, hBrush1));
+    }
+
     POINT cursor;
     GetCursorPos(&cursor);
     ScreenToClient(hwnd, &cursor);
@@ -59,6 +67,10 @@ void PieObject::draw(HWND& hwnd, HDC hdc) {
                             getPoints().back().y - getPoints().front().y}));
 
         LineTo(hdc, getPoints().front().x, getPoints().front().y);
+    }
+
+    if (isReady()) {
+        SelectObject(hdc, holdBrush);
     }
 }
 
